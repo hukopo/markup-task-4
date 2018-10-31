@@ -1,0 +1,100 @@
+.list-view 
+{
+    display: none;
+}
+
+.list-view:checked ~ .trigram 
+{
+    transform: rotate(90deg);
+}
+
+.list-view:checked ~ .cat-card 
+{
+    width: 50%;
+    height: auto;
+}
+
+.list-view:checked ~ .cat-card img 
+{
+    height: 300px;
+}
+
+.list-view:checked ~ .cat-card .cat-description-short 
+{
+    display: none;
+}
+
+.list-view:checked ~ .cat-card .cat-description-detail 
+{
+    display: inline;
+}
+
+img 
+{
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+}
+
+img:hover
+{
+    transform: rotate(-10deg);
+}
+
+.cat-card 
+{
+    display: inline-block;
+    border: 1px solid gray;
+    height: 400px;
+    width: 300px;
+    margin: 20px;
+}
+
+.trigram 
+{
+    font-size: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: block;
+}
+
+.cat-card:hover 
+{
+    box-shadow: 10px 10px 100px gray;
+}
+
+.content 
+{
+    padding: 1em;
+}
+
+.cat-name p:hover 
+{
+    color: rebeccapurple;
+}
+
+.cat-name p 
+{
+    font-size: 1.7em;
+    margin: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cat-description-short p 
+{
+    color: gray;
+    margin: 1px;
+}
+
+.cat-description-detail 
+{
+    display: none;
+}
+
+.cat-description-detail p 
+{
+    color: gray;
+    margin: 1px;
+}
